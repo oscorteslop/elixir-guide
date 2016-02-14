@@ -1,7 +1,7 @@
 # Elixir Guide
 
-A guide aimed at developers who want to get running as quickly as possible with [Elixir](http://elixir-lang.org).
+Una guía dirigida a desarrolladores que desean comenzar a utilizar [Elixir](http://elixir-lang.org) tan pronto como sea posible.
 
-To read the english version, visit the [en](en) directory.
+## Índice
 
-[Versión en Español](README-ES.md)
+- [Tipos de valores](01-value-types.md)

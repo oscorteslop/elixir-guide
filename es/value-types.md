@@ -80,6 +80,7 @@ Elixir también soporta interpolación de strings
 
 ```elixir
 iex> "Hola #{:mundo}"
+"Hola mundo"
 ```
 
 Puedes imprimir un string utilizando la función `IO.puts/1` del módulo `IO`.

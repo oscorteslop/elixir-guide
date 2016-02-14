@@ -91,4 +91,72 @@ Hola mundo!
 :ok
 ```
 
+## Funciones anónimas (Anonymous functions)
+
+Las funciones anónimas son caracterizadas por utilizar `fn`.
+
+```elixir
+iex> suma = fn a, b -> a + b end
+Output
+iex> is_function(suma)
+true
+iex> is_function(suma, 2)
+true
+iex> is_function(suma, 1)
+false
+iex> suma.(1, 2)
+3
+```
+
+Notése el **.** (punto) entre la función y sus parámetros, las funciones anónimas requieren de este punto para ser utilizadas.
+
+## Listas (Lists)
+
+Elixir utiliza corchetes `[ ]` para crear listas, que pueden contener cualquier tipo de valor.
+
+```elixir
+iex> [1, 2, true, 3]
+[1, 2, true, 3]
+iex> length [1, 2, 3]
+3
+```
+
+Dos listas pueden ser concatenadas usando los operadores `++/2` y `--/2`:
+
+```elixir
+iex> [1, 2, 3] ++ [4, 5, 6]
+[1, 2, 3, 4, 5, 6]
+iex> [1, true, 2, false, 3, true] -- [true, false]
+[1, 2, 3, true]
+```
+
+## Tuples
+
+Elixir usa llaves para definir tuples, al igual que las listas, los tuples pueden contener cualquier tipo de valor.
+
+```elixir
+iex> {:ok, "hola"}
+{:ok, "hola"}
+iex> tuple_size {:ok, "hola"}
+2
+```
+
+También puedes consultar por un elemento de un tuple:
+
+```elixir
+iex> elem(tuple, 1)
+"hola"
+```
+
+Para añadir un elemento a un tuple existente, puedes utilizar `put_elem/3`.
+
+```elixir
+iex> tuple = {:ok, "hola"}
+{:ok, "hola"}
+iex> put_elem(tuple, 1, "mundo")
+{:ok, "mundo"}
+iex> tuple
+{:ok, "hola"}
+```
+
 Para más información, se recomienda visitar [Basic Types](http://elixir-lang.org/getting-started/basic-types.html).

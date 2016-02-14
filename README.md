@@ -4,4 +4,4 @@ Una guía dirigida a desarrolladores que desean comenzar a utilizar [Elixir](htt
 
 ## Índice
 
-- [Tipos de valores](01-value-types.md)
+- [Tipos de valores](02-value-types.md)

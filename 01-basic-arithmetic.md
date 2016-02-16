@@ -10,8 +10,10 @@ iex> 5 - 4
 iex> 5 * 5
 25
 iex> 25 / 5
-5
+5.0
 ```
+*Al utilizar `/` Elixir siempre retornará un decimal*
+
 
 También podemos utilizar `rem` para obtener el residuo de una división
 

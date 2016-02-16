@@ -14,6 +14,14 @@ iex> 25 / 5
 ```
 *Al utilizar `/` Elixir siempre retornará un decimal*
 
+De igual manera puedes hacer uso de `div` para obtener un resultado en número entero
+
+```elixir
+iex> div(25, 5)
+5
+iex> div 25, 5
+5
+```
 
 También podemos utilizar `rem` para obtener el residuo de una división
 

@@ -29,3 +29,10 @@ También podemos utilizar `rem` para obtener el residuo de una división
 iex> rem 10 / 3
 1
 ```
+
+Puedes utilizar múltiples expresiones al añadir `;` y IEX retornará el resultado de la última operación
+
+```elixir
+iex> 2 + 3; 5 + 5
+10
+```

@@ -159,4 +159,48 @@ iex> tuple
 {:ok, "hola"}
 ```
 
+## Mapas (Maps)
+
+Los mapas son una colección de pares de key/value, la estructura de un mapa es la siguiente
+
+```elixir
+%{key => value, key => value}
+```
+
+Ó
+
+```elixir
+%{key: value, key: value}
+```
+
+La diferencia, es que al usar la segunda retornaremos atoms.
+
+Con lo anterior dicho, podemos definir un mapa así
+
+```elixir
+iex> paises = %{"COL" => "Colombia", "ESP" => "España", "MEX" => "México"}
+%{"COL" => "Colombia", "ESP" => "España", "MEX" => "México"}
+```
+
+Ó
+
+```elixir
+iex> paises = %{"US": "Estados Unidos", "UK": "Reino Unido"}
+%{US: "Estados Unidos", UK: "Reino Unido"}
+```
+
+Podemos acceder al mapa de la siguiente manera si usamos el primer método
+
+```elixir
+iex> paises["COL"]
+"Colombia"
+```
+
+Si usas el segundo método, debes utilizar un atom en su lugar
+
+```elixir
+iex> paises[:US]
+"Estados Unidos"
+```
+
 Para más información, se recomienda visitar [Basic Types](http://elixir-lang.org/getting-started/basic-types.html).

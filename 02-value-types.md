@@ -185,7 +185,7 @@ iex> paises = %{"COL" => "Colombia", "ESP" => "España", "MEX" => "México"}
 Ó
 
 ```elixir
-iex> paises = %{"US": "Estados Unidos", "UK": "Reino Unido"}
+iex> paises = %{US: "Estados Unidos", UK: "Reino Unido"}
 %{US: "Estados Unidos", UK: "Reino Unido"}
 ```
 
